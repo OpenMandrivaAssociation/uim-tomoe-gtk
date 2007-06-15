@@ -1,7 +1,6 @@
-%define version	0.2.0
-%define release	%mkrel 2
-
-%define libtomoe-gtk_version 0.1.0
+%define name	uim-tomoe-gtk
+%define version	0.5.0
+%define release	%mkrel 1
 
 Name:		uim-tomoe-gtk
 Summary:	A tool for providing tomoe support to uim
@@ -13,26 +12,21 @@ URL:  		https://sourceforge.jp/projects/tomoe/
 Source0:	%{name}-%{version}.tar.bz2
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 Requires:		uim tomoe
-Requires:		libtomoe-gtk >= %{libtomoe-gtk_version}
-BuildRequires:		gtk+2-devel >= 2.8.0
+BuildRequires:		gtk+2-devel
 BuildRequires:		libuim-devel
-BuildRequires:		libtomoe-devel >= %{tomoe_version}
-BuildRequires:          automake1.8 
+BuildRequires:		libtomoe-devel
 BuildRequires:          tomoe
 BuildRequires:          libm17n-lib
-BuildRequires:	 libtomoe-gtk-devel
+BuildRequires:	 	libtomoe-gtk-devel
 
 %description
 A tool for providing tomoe support to uim.
 
-
 %prep
 %setup -q
-cp /usr/share/automake-1.9/mkinstalldirs .
 
 %build
-[[ ! -x configure ]] && ./autogen.sh
-%configure2_5x
+%configure
 %make
 
 %install
