@@ -1,5 +1,5 @@
 %define name	uim-tomoe-gtk
-%define version	0.5.0
+%define version	0.6.0
 %define release	%mkrel 1
 
 Name:		uim-tomoe-gtk
@@ -38,10 +38,7 @@ rm -rf $RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-
 %files -f %{name}.lang
 %defattr(-,root,root)
 %doc AUTHORS COPYING ChangeLog
 %{_bindir}/*
-
-
