@@ -4,7 +4,7 @@
 Name:		uim-tomoe-gtk
 Summary:	A tool for providing tomoe support to uim
 Version:	%{version}
-Release:	%mkrel 2
+Release:	%mkrel 3
 Group:		System/Internationalization
 License:	LGPL
 URL:  		https://sourceforge.jp/projects/tomoe/
