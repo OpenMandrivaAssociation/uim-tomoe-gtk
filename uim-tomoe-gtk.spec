@@ -12,8 +12,8 @@ Source0:	%{name}-%{version}.tar.bz2
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 Requires:		uim tomoe
 BuildRequires:		gtk+2-devel
-BuildRequires:		libuim-devel
-BuildRequires:		libtomoe-devel
+BuildRequires:		uim-devel
+BuildRequires:		tomoe-devel
 BuildRequires:          tomoe
 BuildRequires:          m17n-lib-devel
 BuildRequires:	 	libtomoe-gtk-devel
