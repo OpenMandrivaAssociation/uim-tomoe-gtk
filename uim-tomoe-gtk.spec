@@ -15,7 +15,7 @@ BuildRequires:		gtk+2-devel
 BuildRequires:		libuim-devel
 BuildRequires:		libtomoe-devel
 BuildRequires:          tomoe
-BuildRequires:          libm17n-lib
+BuildRequires:          m17n-lib-devel
 BuildRequires:	 	libtomoe-gtk-devel
 
 %description
@@ -25,7 +25,7 @@ A tool for providing tomoe support to uim.
 %setup -q
 
 %build
-%configure
+%configure2_5x
 %make
 
 %install
