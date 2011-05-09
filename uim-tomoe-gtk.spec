@@ -16,7 +16,8 @@ BuildRequires:		uim-devel
 BuildRequires:		tomoe-devel
 BuildRequires:          tomoe
 BuildRequires:          m17n-lib-devel
-BuildRequires:	 	libtomoe-gtk-devel
+BuildRequires:	 	tomoe-gtk-devel
+BuildREquires:		intltool
 
 %description
 A tool for providing tomoe support to uim.
